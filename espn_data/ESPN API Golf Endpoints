@@ -1,0 +1,97 @@
+{eid} : Event ID
+{ath_id} : Athleate ID
+{st} : types, almost always 2 for golf (regular season)
+{yr} : Year
+
+URL: sports.core.api.espn.com	
+
+Core League Info	
+  /v2/sports/golf/leagues/all
+
+Athletes	
+  /v2/sports/golf/leagues/all/athletes
+
+Calendar - 
+  Blacklist		/v2/sports/golf/leagues/all/calendar/blacklist
+  Offdays	/v2/sports/golf/leagues/all/calendar/offdays
+  Ondays	/v2/sports/golf/leagues/all/calendar/ondays
+  Whitelist	/v2/sports/golf/leagues/all/calendar/whitelist
+
+countries	
+	/v2/sports/golf/leagues/all/countries
+
+countries by athletes	
+	/v2/sports/golf/leagues/all/countries/{id}/athletes
+
+Competitions
+  /v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/competitions/{eid}
+  /v2/sports/golf/leagues/all/events/{eid}/courses/{course id}/rounds/#/statistics
+
+Athletes
+athlete status	
+/v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/competitors/{ath_id}/status
+athlete score	s
+/v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/competitors/{ath_id}/Score
+athlete score by hole	
+/v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/competitors/{ath_id}/linescores
+Athlete Eventlog	
+/v2/sports/golf/leagues/all/seasons/{yr}/athletes/{ath_id}/eventlog
+Athlete	
+/v2/sports/golf/leagues/all/seasons/{yr}/athletes/{ath_id}
+Athlete stats	s
+/v2/sports/golf/leagues/all/seasons/{yr}/athletes/{ath_id}/statistics
+Seasons played	
+/v2/sports/golf/leagues/all/athletes/{ath_id}/seasons
+
+stats
+/v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/competitors/{ath_id}/statistics
+status	
+/v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/status
+
+broadcast		
+/v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/broadcasts
+
+Media Info	
+/v2/sports/golf/leagues/all/media/{media id}
+
+ /v2/sports/golf/leagues/all/events/{eid}
+
+leaders	
+/v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/Leaders
+
+Event course		
+/v2/sports/golf/leagues/all/events/{eid}/competitions/{eid}/courses
+
+
+
+Standings
+/v2/sports/golf/leagues/all/seasons/{yr}/types/{st}/standings
+Leaders
+/v2/sports/golf/leagues/all/seasons/{yr}/types/{st}/leaders
+
+Season Details
+/v2/sports/golf/leagues/all/seasons/{year}
+
+Seasons	
+/v2/sports/golf/leagues/all/seasons
+
+rankings	
+/v2/sports/golf/leagues/all/seasons/{year}/rankings
+
+Historical Rankings
+  /v2/sports/golf/leagues/all/seasons/{yr}/rankings/#/dates/{yyyymmdd}
+
+Standkings  
+	/v2/sports/golf/leagues/all/seasons/{yr}/standings
+
+Week Details	
+/v2/sports/golf/leagues/all/seasons/{curr yr}/types/{st}
+
+tournaments	
+/v2/sports/golf/leagues/all/tournaments/{id}/seasons/{year}
+
+Courses	
+/v2/sports/golf/leagues/all/venues
+
+Venues	
+/v2/sports/golf/leagues/all/venues
