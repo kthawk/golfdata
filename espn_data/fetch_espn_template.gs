@@ -1,4 +1,6 @@
-function fetch_espnleagues() {
+//google app script, calls espn data and puts it in a google sheet, this should work for any espn api, but was test on golf
+
+function fetch_espndata() {
 // Sheets Info
   const ss = SpreadsheetApp.openById('{ID}'); //spreadsheet data is going into
   const sourceSheet = ss.getSheetByName('{source sheet name}'); //source sheet if you are pulling data
